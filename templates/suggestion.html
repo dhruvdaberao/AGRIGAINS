@@ -383,7 +383,7 @@ window.addEventListener('scroll', ()=> {
     ph: Ph.value,
     rainfall: Rainfall.value
 });
-        let a = fetch("http://127.0.0.1:5500/predict", {
+        let a = fetch("/predict", {
             method: "post",
             headers: {
                 "Content-Type": data.type
