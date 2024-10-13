@@ -1,4 +1,4 @@
-Crop Prediction and Recommendation System
+##Crop Prediction and Recommendation System
 This project helps farmers and agricultural enthusiasts to:
 
 Predict Crop Yield: Using weather, soil, and environmental data, it predicts the yield of a specific crop.
