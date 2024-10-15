@@ -247,41 +247,40 @@ input {
  gap: 10px;
 }  */
 /* Responsive form container */
-.form-container {
+/* .form-container {
     background-color: #003329;
     color: #fff;
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
-    margin: 0 auto; /* Centers the form */
-}
+ */
 
 /* Align form inputs vertically */
-.form-container .form-group {
+/* .form-container .form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-}
+} */
 
 /* Label styling */
-.form-container label {
+/* .form-container label {
     font-size: 1rem;
     margin-bottom: 8px;
-    color: #fff;
-}
+    color: #fff; */
+
 
 /* Input styling */
-.form-container input {
+/* .form-container input {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1rem;
     background-color: #f4f4f4;
     color: #333;
-}
+} */
 
 /* Button styling */
-.form-container button {
+/* .form-container button {
     background-color: #28a745;
     color: white;
     padding: 12px;
@@ -294,7 +293,7 @@ input {
 }
 
 /* Responsive card styling */
-.card {
+/* .card {
     margin-top: 20px;
     background-color: #1c1c1c;
     color: #fff;
@@ -306,10 +305,10 @@ input {
 .card-body {
     background-color: rgb(21, 179, 116);
     padding: 20px;
-}
+}  */
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .form-container {
         width: 100%;
         padding: 10px;
@@ -326,7 +325,7 @@ input {
     .card {
         width: 100%;
     }
-}
+}  */
 
 
 @media only screen and (max-width: 786px) {
