@@ -27,6 +27,16 @@
 
 } */
 
+body{
+    background: url("/static/images/windmill.avif") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    /* backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
+}
+
 .nav{
     position: fixed;
     top: 0;
