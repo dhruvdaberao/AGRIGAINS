@@ -160,6 +160,7 @@
     max-width: 1200px; /* Optional, to limit the maximum width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
     transition: box-shadow 0.3s ease; /* Optional, for a smooth shadow transition on hover */
+    background-color: #79b57b;
 }
 
 .card:hover {
