@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins' , sans-serif;
+    background-color: #caeccb;
 }
 
 /* body{ 
@@ -27,15 +28,6 @@
 
 } */
 
-body{
-    background: url("/static/images/windmill.avif") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    /* backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); */
-}
 
 .nav{
     position: fixed;
