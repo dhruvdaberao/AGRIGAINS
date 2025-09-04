@@ -7,62 +7,54 @@
     box-sizing: border-box;
     font-family: 'poppins' , sans-serif;
 }
-
-/* body{
-    background: url("images/too-many-vegitables.avif") ;
-  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-   
-} */
-
-/* .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 110vh;
-    background: rgba(39, 39, 39, 0.4);
-
-} */
-
-.nav{
+.nav {
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-around;
-    width: 100% ;
-    height: 75px ;
-    line-height: 100px ;
+    justify-content: space-between; /* logo left, menu right */
+    align-items: center; /* vertical alignment */
+    width: 100%;
+    height: 75px;
     background: linear-gradient(rgba(39,39,39,0.6));
-    z-index : 100;
+    z-index: 100;
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); 
-    /* background-color:#122d12; */
-
+    -webkit-backdrop-filter: blur(5px);
+    padding: 0 40px; /* spacing on left and right */
 }
 
-
-.nav-logo{
-    color:#000000;
+.nav-logo {
     display: flex;
+    align-items: center; /* align logo & text vertically */
+    gap: 10px; /* spacing between logo and text */
 }
 
-/* .nav-logo img{
-    height: 120px;
-    padding-bottom: 10%;
-} */
+.nav-logo img {
+    height: 50px;  /* balanced logo size */
+    width: auto;
+}
 
-.nav-logo h3{
-    
-    /* font-family: Georgia, serif; */
+.nav-logo h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+/* if you have nav links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
     font-weight: 500;
-/*     
-    font-family: cursive; */
-    /* font-family: 'Courier New', Courier, monospace; */
-  
+    color: #000;
 }
+
 
 .slide-in {
     opacity: 0;

@@ -6,19 +6,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins' , sans-serif;
-    background-color: #79b57b !important;
+
 }
 
-/* body{ 
+ body{ 
      background: url("images/field3.avif") ; 
-    background:  rgb(235, 227, 108) ; 
+    background:  rgb(136, 233, 173) ; 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: bottom; 
     background-attachment: fixed; 
-    /* */
     
-/* } */ 
+    
+ }
 /* .wrapper{
     display: flex;
     justify-content: center;
@@ -27,46 +27,53 @@
     background: rgba(39, 39, 39, 0.4);
 
 } */
-
-
-.nav{
+.nav {
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-around;
-    width: 100% ;
-    height: 75px ;
-    line-height: 100px ;
-    /* background: linear-gradient(rgba(39,39,39,0.6)); */
-    z-index : 100;
-    /* background-color:#122d12; */
+    justify-content: space-between; /* logo left, menu right */
+    align-items: center; /* vertical alignment */
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(rgba(39,39,39,0.6));
+    z-index: 100;
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); 
-    
+    -webkit-backdrop-filter: blur(5px);
+    padding: 0 40px; /* spacing on left and right */
 }
 
-.nav-logo{
-    color:#000000;
+.nav-logo {
     display: flex;
+    align-items: center; /* align logo & text vertically */
+    gap: 10px; /* spacing between logo and text */
 }
 
-.nav-logo img{
-    height: 110px;
-    padding-bottom: 10%;
-    /* backdrop-filter:calc(100PX) */
+.nav-logo img {
+    height: 50px;  /* balanced logo size */
+    width: auto;
 }
 
-.nav-logo h3{
-    /* font-family: Georgia, serif; */
-    
-    /* font-family: cursive; */
-   
-/* 
-    font-family: 'Courier New', Courier, monospace; */
+.nav-logo h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+/* if you have nav links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
     font-weight: 500;
-  
+    color: #000;
 }
-
 .slide-in {
     opacity: 0;
     transform: translateX(-100%);
@@ -197,8 +204,8 @@
     display: inline-block;
     padding: 10px 20px;
     border-radius: 25px;
-    background-color: #4CAF50; /* Initial button color */
-    color: white;
+    background-color: #00552c; /* Initial button color */
+    color: rgb(153, 183, 173);
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -369,8 +376,8 @@ body {
     width: 50%;
     margin: 50px auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(36, 125, 91);
+    box-shadow: 0px 0px 10px rgba(30, 70, 57, 0.1);
     border-radius: 8px;
 }
 
@@ -396,15 +403,15 @@ input, select {
 
 button {
     padding: 10px;
-    background-color: #28a745;
-    color: white;
+    background-color: #95f9c2;
+    color: rgb(0, 35, 24);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #218263;
 }
 
 #suggestionOutput {
