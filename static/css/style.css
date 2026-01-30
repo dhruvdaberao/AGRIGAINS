@@ -1,17 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     /* overflow: hidden; */
     box-sizing: border-box;
-    font-family: 'poppins' , sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
-body{
-    background: url("/static/images/windmill.avif") ;
+body {
+    background: url("/static/images/windmill.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -20,7 +19,7 @@ body{
     -webkit-backdrop-filter: blur(5px); */
 }
 
-.wrapper{
+.wrapper {
     display: none;
     justify-content: center;
     align-items: center;
@@ -28,29 +27,36 @@ body{
     background: rgba(39, 39, 39, 0.4);
 
 }
+
 .nav {
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-between; /* logo left, menu right */
-    align-items: center; /* vertical alignment */
+    justify-content: space-between;
+    /* logo left, menu right */
+    align-items: center;
+    /* vertical alignment */
     width: 100%;
     height: 75px;
-    background: linear-gradient(rgba(39,39,39,0.6));
+    background: linear-gradient(rgba(39, 39, 39, 0.6));
     z-index: 100;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    padding: 0 40px; /* spacing on left and right */
+    padding: 0 40px;
+    /* spacing on left and right */
 }
 
 .nav-logo {
     display: flex;
-    align-items: center; /* align logo & text vertically */
-    gap: 10px; /* spacing between logo and text */
+    align-items: center;
+    /* align logo & text vertically */
+    gap: 10px;
+    /* spacing between logo and text */
 }
 
 .nav-logo img {
-    height: 50px;  /* balanced logo size */
+    height: 50px;
+    /* balanced logo size */
     width: auto;
 }
 
@@ -89,21 +95,22 @@ body{
         opacity: 0;
         transform: translateX(-100%);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-.nav-menu ul{
-    display:flex;
+.nav-menu ul {
+    display: flex;
 }
 
-.nav-menu ul li{
+.nav-menu ul li {
     list-style-type: none;
 }
 
-.nav-menu ul li .link{
+.nav-menu ul li .link {
     text-decoration: none;
     font-weight: 500;
     color: #ffffff;
@@ -112,11 +119,12 @@ body{
 
 }
 
-.link:hover, .active{
+.link:hover,
+.active {
     border-bottom: 2px solid #fff;
 }
 
-.nav-button .btn{
+.nav-button .btn {
     width: 130px;
     height: 40px;
     font-weight: 500;
@@ -126,31 +134,33 @@ body{
     transition: 3s ease;
 
 }
-.btn:hover{
+
+.btn:hover {
     background: rgba(255, 255, 255, 0.3);
 
 }
 
 
-#registerbtn{
-    margin-left : 15px;
+#registerbtn {
+    margin-left: 15px;
 
 }
 
-.btn.white-btn{
+.btn.white-btn {
     background: rgba(255, 255, 255, 0.7);
 
 
 }
 
-.btn.btn.white-btnhover{
+.btn.btn.white-btnhover {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.nav-menu-btn{
+.nav-menu-btn {
     display: none;
 }
-.form-box{
+
+.form-box {
     position: relative;
     display: flex;
     align-items: center;
@@ -163,7 +173,7 @@ body{
 
 }
 
-.login-container{
+.login-container {
     position: absolute;
     left: 4px;
     width: 500px;
@@ -172,7 +182,7 @@ body{
     transition: .5s ease-in-out;
 }
 
-.register-container{
+.register-container {
     position: absolute;
     right: -520px;
     width: 500px;
@@ -181,7 +191,8 @@ body{
     transition: .5s ease-in-out;
 
 }
-.top span{
+
+.top span {
     color: #fff;
     font-size: small;
     padding: 10px 0;
@@ -189,51 +200,56 @@ body{
     justify-content: center;
 }
 
-.top span a{
+.top span a {
     font-weight: 500;
     color: #fff;
     margin-left: 5px;
 
 }
-header{
+
+header {
     color: #fff;
     font-size: 30px;
     text-align: center;
     padding: 10px 0 30px 0;
 }
 
-.two-forms{
-   display: flex;
- gap: 10px;
-} 
+.two-forms {
+    display: flex;
+    gap: 10px;
+}
 
-.input-field{
+.input-field {
     font-size: 15px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     height: 50px;
     width: 100%;
     padding: 0 10px 0 45px;
-    border: none ;
+    border: none;
     border-radius: 30px;
     outline: none;
     transition: .2s ease;
 
 }
-.input-field:hover, .input-field:focus{
+
+.input-field:hover,
+.input-field:focus {
     background: rgba(255, 255, 255, 0.25);
 }
-::-webkit-input-placeholder{
+
+::-webkit-input-placeholder {
     color: #fff;
 }
-.input-box i{
+
+.input-box i {
     position: relative;
     top: -35px;
     left: 17px;
     color: #fff;
 }
 
-.submit{
+.submit {
     font-size: 15px;
     font-weight: 500;
     color: black;
@@ -246,12 +262,13 @@ header{
     cursor: pointer;
     transition: .3s ease-in-out;
 }
-.submit:hover{
+
+.submit:hover {
     background: rgba(255, 255, 255, 0.5);
-    box-shadow: 1px 5px 7px 1px rgba(255, 255, 255, 0.2); 
+    box-shadow: 1px 5px 7px 1px rgba(255, 255, 255, 0.2);
 }
 
-.two-col{
+.two-col {
     display: flex;
     justify-content: space-between;
     color: #fff;
@@ -259,53 +276,57 @@ header{
     margin-top: 10px;
 }
 
-.two-col .one{
+.two-col .one {
     display: flex;
     gap: 5px;
 }
 
-.two label a{
+.two label a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
 }
 
 
-.two label a:hover{
+.two label a:hover {
     text-decoration: underline;
-  
+
 }
+
 @media only screen and (max-width: 786px) {
-    .nav-button{
+    .nav-button {
         display: none;
     }
 
-    .nav-menu.responsive{
-        top: 100px;
-
+    .nav-menu.responsive {
+        top: 75px;
     }
-    .nav-menu{
+
+    .nav-menu {
         position: absolute;
-        top: -800px;
+        top: -1000px;
         display: flex;
         justify-content: center;
-        background: rgba(255, 255, 255, 0.2);
+        background: #333333;
+        /* Dark background since body nav is dark-ish or overlay */
         width: 100%;
-        height: 90vh;
-        backdrop-filter: blur(20px);
+        height: auto;
+        min-height: 50vh;
+        backdrop-filter: none;
         transition: .3s;
-
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        padding-bottom: 20px;
     }
-    
-    .nav-menu ul{
+
+    .nav-menu ul {
         flex-direction: column;
-        text-align: center;   
+        text-align: center;
     }
 
-    .nav-menu-btn{
+    .nav-menu-btn {
         display: block;
     }
 
-    .nav-menu-btn i{
+    .nav-menu-btn i {
         font-size: 25px;
         color: #fff;
         padding: 10px;
@@ -315,7 +336,7 @@ header{
         transition: .3s;
     }
 
-    .nav-menu-btn i:hover{
+    .nav-menu-btn i:hover {
         background: rgba(255, 255, 255, 0.15);
 
     }
@@ -324,19 +345,23 @@ header{
 
 }
 
-@media only screen and (max-width: 540px){
-    .wrapper{
+@media only screen and (max-width: 540px) {
+    .wrapper {
         min-height: 100vh;
     }
-    .form-box{
+
+    .form-box {
         width: 100%;
         height: 500px;
     }
-    .register-container, .login-container{
+
+    .register-container,
+    .login-container {
         width: 100%;
         padding: 0 20px;
     }
-    .register-container .two-forms{
+
+    .register-container .two-forms {
         flex-direction: column;
         gap: 0;
     }

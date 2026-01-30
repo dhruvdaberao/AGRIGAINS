@@ -573,21 +573,24 @@ header {
     }
 
     .nav-menu.responsive {
-        top: 100px;
-
+        top: 75px;
     }
 
     .nav-menu {
         position: absolute;
-        top: -800px;
+        top: -1000px;
         display: flex;
         justify-content: center;
-        background: rgba(255, 255, 255, 0.2);
+        background: #333333;
+        /* Solid Dark Background */
         width: 100%;
-        height: 90vh;
-        backdrop-filter: blur(20px);
+        height: auto;
+        min-height: 50vh;
+        backdrop-filter: none;
         transition: .3s;
-
+        flex-direction: column;
+        padding-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
 
     .nav-menu ul {
