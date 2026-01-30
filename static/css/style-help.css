@@ -1,11 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' , sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 
@@ -31,19 +30,19 @@
 
 } */
 
-.nav{
+.nav {
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-around;
-    width: 100% ;
-    height: 75px ;
-    line-height: 100px ;
-    background: linear-gradient(rgba(39,39,39,0.6));
-    z-index : 100;
+    width: 100%;
+    height: 75px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39, 39, 39, 0.6));
+    z-index: 100;
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); 
-    
+    -webkit-backdrop-filter: blur(5px);
+
     /* background-color:#122d12; */
 
 }
@@ -52,25 +51,31 @@
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-between; /* logo left, menu right */
-    align-items: center; /* vertical alignment */
+    justify-content: space-between;
+    /* logo left, menu right */
+    align-items: center;
+    /* vertical alignment */
     width: 100%;
     height: 75px;
-    background: linear-gradient(rgba(39,39,39,0.6));
+    background: linear-gradient(rgba(39, 39, 39, 0.6));
     z-index: 100;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    padding: 0 40px; /* spacing on left and right */
+    padding: 0 40px;
+    /* spacing on left and right */
 }
 
 .nav-logo {
     display: flex;
-    align-items: center; /* align logo & text vertically */
-    gap: 10px; /* spacing between logo and text */
+    align-items: center;
+    /* align logo & text vertically */
+    gap: 10px;
+    /* spacing between logo and text */
 }
 
 .nav-logo img {
-    height: 50px;  /* balanced logo size */
+    height: 50px;
+    /* balanced logo size */
     width: auto;
 }
 
@@ -109,6 +114,7 @@
         opacity: 0;
         transform: translateX(-100%);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -118,15 +124,15 @@
 
 
 
-.nav-menu ul{
-    display:flex;
+.nav-menu ul {
+    display: flex;
 }
 
-.nav-menu ul li{
+.nav-menu ul li {
     list-style-type: none;
 }
 
-.nav-menu ul li .link{
+.nav-menu ul li .link {
     text-decoration: none;
     font-weight: 500;
     color: #000000;
@@ -135,7 +141,8 @@
 
 }
 
-.link:hover, .active{
+.link:hover,
+.active {
     border-bottom: 2px solid #000000;
 }
 
@@ -152,7 +159,7 @@
 
 
 
-.nav-menu-btn{
+.nav-menu-btn {
     display: none;
 }
 
@@ -166,8 +173,9 @@
 } */
 
 
-   /* General Styles */
-   body, html {
+/* General Styles */
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -215,11 +223,13 @@ p {
 }
 
 .help-banner {
-    background-color: #f4f4f4; /* Light background color */
-    padding: 80px ;
+    background-color: #f4f4f4;
+    /* Light background color */
+    padding: 80px;
     margin-bottom: 0px;
     text-align: center;
-    border-bottom: 2px solid #dcdcdc; /* Subtle border for separation */
+    border-bottom: 2px solid #dcdcdc;
+    /* Subtle border for separation */
 }
 
 .help-content h1 {
@@ -292,7 +302,8 @@ p {
 .flip-cards {
     background-color: #eef2f5;
     padding: 40px 20px;
-    margin-bottom: 20px; /* Added margin to avoid overlap */
+    margin-bottom: 20px;
+    /* Added margin to avoid overlap */
 }
 
 .card-container {
@@ -306,10 +317,12 @@ p {
     width: 30%;
     perspective: 1000px;
     min-width: 280px;
-    position: relative; /* Ensure proper stacking context */
+    position: relative;
+    /* Ensure proper stacking context */
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
     width: 100%;
     height: 200px;
     border-radius: 10px;
@@ -343,7 +356,7 @@ p {
     transform: rotateY(0);
 }
 
-.help-container{
+.help-container {
     margin-top: 200px;
 }
 
@@ -401,7 +414,7 @@ p {
 
 .footer-section.social {
     /* display: flex; */
-     justify-content: center; 
+    justify-content: center;
 }
 
 .social-icon {
@@ -495,15 +508,16 @@ p {
 
 
 @media only screen and (max-width: 786px) {
-    .nav-button{
+    .nav-button {
         display: none;
     }
 
-    .nav-menu.responsive{
+    .nav-menu.responsive {
         top: 100px;
 
     }
-    .nav-menu{
+
+    .nav-menu {
         position: absolute;
         top: -800px;
         display: flex;
@@ -515,27 +529,27 @@ p {
         transition: .3s;
 
     }
-    
-    .nav-menu ul{
+
+    .nav-menu ul {
         flex-direction: column;
-        text-align: center;   
+        text-align: center;
     }
 
-    .nav-menu-btn{
+    .nav-menu-btn {
         display: block;
     }
 
-    .nav-menu-btn i{
+    .nav-menu-btn i {
         font-size: 25px;
         color: #000000;
         padding: 10px;
-        background:  rgba(100, 95, 95, 0.2);
+        background: rgba(100, 95, 95, 0.2);
         border-radius: 50%;
         cursor: pointer;
         transition: .3s;
     }
 
-    .nav-menu-btn i:hover{
+    .nav-menu-btn i:hover {
         background: rgba(11, 246, 113, 0.15);
 
     }
@@ -544,9 +558,29 @@ p {
 
 }
 
-@media only screen and (max-width: 540px){
-    .wrapper{
+@media only screen and (max-width: 540px) {
+    .wrapper {
         min-height: 100vh;
     }
- 
+
+
+}
+
+.gif-help {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.centered-content {
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .gif-help img {
+        height: 150px;
+    }
 }

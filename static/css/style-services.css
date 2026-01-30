@@ -1,35 +1,41 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' , sans-serif;
+    font-family: 'poppins', sans-serif;
 }
+
 .nav {
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-between; /* logo left, menu right */
-    align-items: center; /* vertical alignment */
+    justify-content: space-between;
+    /* logo left, menu right */
+    align-items: center;
+    /* vertical alignment */
     width: 100%;
     height: 75px;
-    background: linear-gradient(rgba(39,39,39,0.6));
+    background: linear-gradient(rgba(39, 39, 39, 0.6));
     z-index: 100;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    padding: 0 40px; /* spacing on left and right */
+    padding: 0 40px;
+    /* spacing on left and right */
 }
 
 .nav-logo {
     display: flex;
-    align-items: center; /* align logo & text vertically */
-    gap: 10px; /* spacing between logo and text */
+    align-items: center;
+    /* align logo & text vertically */
+    gap: 10px;
+    /* spacing between logo and text */
 }
 
 .nav-logo img {
-    height: 50px;  /* balanced logo size */
+    height: 50px;
+    /* balanced logo size */
     width: auto;
 }
 
@@ -67,6 +73,7 @@
         opacity: 0;
         transform: translateX(-100%);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -74,15 +81,15 @@
 }
 
 
-.nav-menu ul{
-    display:flex;
+.nav-menu ul {
+    display: flex;
 }
 
-.nav-menu ul li{
+.nav-menu ul li {
     list-style-type: none;
 }
 
-.nav-menu ul li .link{
+.nav-menu ul li .link {
     text-decoration: none;
     font-weight: 500;
     color: #000000;
@@ -91,7 +98,8 @@
 
 }
 
-.link:hover, .active{
+.link:hover,
+.active {
     border-bottom: 2px solid #000000;
 }
 
@@ -108,7 +116,7 @@
 
 
 
-.nav-menu-btn{
+.nav-menu-btn {
     display: none;
 }
 
@@ -116,8 +124,9 @@
 
 
 
-  /* General Styles */
-  body, html {
+/* General Styles */
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: poppins, sans-serif;
@@ -172,23 +181,33 @@ header {
 
 .services-container {
     display: flex;
-    flex-direction: row; /* Align cards in a row */
-    flex-wrap: nowrap; /* Prevent wrapping to a new line */
-    justify-content: center; /* Center align cards horizontally */
-    align-items: center; /* Stretch cards to the same height (optional) */
-    gap: 50px; /* Space between cards */
+    flex-direction: row;
+    /* Align cards in a row */
+    flex-wrap: nowrap;
+    /* Prevent wrapping to a new line */
+    justify-content: center;
+    /* Center align cards horizontally */
+    align-items: center;
+    /* Stretch cards to the same height (optional) */
+    gap: 50px;
+    /* Space between cards */
 }
 
 
 /* Individual Service Card */
 .service-card {
     background-color: #fff;
-    border-radius: 15px; /* Curved corners */
+    border-radius: 15px;
+    /* Curved corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Fixed width for consistency */
-    max-width: 100%; /* Ensures card fits within the container */
-    margin: 0; /* No margin between cards in horizontal layout */
-    overflow: hidden; /* Ensure no overflow */
+    width: 300px;
+    /* Fixed width for consistency */
+    max-width: 100%;
+    /* Ensures card fits within the container */
+    margin: 0;
+    /* No margin between cards in horizontal layout */
+    overflow: hidden;
+    /* Ensure no overflow */
     transition: box-shadow 0.3s ease;
     padding: 20px;
     box-sizing: border-box;
@@ -219,8 +238,10 @@ header {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .services-container {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
-        align-items: center; /* Center align cards horizontally */
+        flex-direction: column;
+        /* Stack cards vertically on smaller screens */
+        align-items: center;
+        /* Center align cards horizontally */
     }
 }
 
@@ -232,17 +253,20 @@ header {
 .service-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Default color */
+    background-color: #4CAF50;
+    /* Default color */
     color: #fff;
     text-decoration: none;
-    border-radius: 20px; /* Curved edges */
+    border-radius: 20px;
+    /* Curved edges */
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .service-button:hover {
-    background-color: #45a049; /* Darker green for hover effect */
+    background-color: #45a049;
+    /* Darker green for hover effect */
     color: #fff;
 }
 
@@ -271,7 +295,7 @@ header {
 .card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 300px;
     text-align: center;
@@ -280,7 +304,7 @@ header {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-image {
@@ -407,6 +431,7 @@ header {
 }
 
 @media (max-width: 768px) {
+
     .how-it-works-content,
     .faq-content {
         flex-direction: column;
@@ -467,7 +492,7 @@ header {
 
 .footer-section.social {
     /* display: flex; */
-     justify-content: center; 
+    justify-content: center;
 }
 
 .social-icon {
@@ -543,15 +568,16 @@ header {
 
 
 @media only screen and (max-width: 786px) {
-    .nav-button{
+    .nav-button {
         display: none;
     }
 
-    .nav-menu.responsive{
+    .nav-menu.responsive {
         top: 100px;
 
     }
-    .nav-menu{
+
+    .nav-menu {
         position: absolute;
         top: -800px;
         display: flex;
@@ -563,27 +589,27 @@ header {
         transition: .3s;
 
     }
-    
-    .nav-menu ul{
+
+    .nav-menu ul {
         flex-direction: column;
-        text-align: center;   
+        text-align: center;
     }
 
-    .nav-menu-btn{
+    .nav-menu-btn {
         display: block;
     }
 
-    .nav-menu-btn i{
+    .nav-menu-btn i {
         font-size: 25px;
         color: #000000;
         padding: 10px;
-        background:  rgba(100, 95, 95, 0.2);
+        background: rgba(100, 95, 95, 0.2);
         border-radius: 50%;
         cursor: pointer;
         transition: .3s;
     }
 
-    .nav-menu-btn i:hover{
+    .nav-menu-btn i:hover {
         background: rgba(19, 149, 159, 0.15);
 
     }
@@ -592,9 +618,24 @@ header {
 
 }
 
-@media only screen and (max-width: 540px){
-    .wrapper{
+@media only screen and (max-width: 540px) {
+    .wrapper {
         min-height: 100vh;
     }
- 
+
+}
+
+.center-flex {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Likely want column for mobile default or handle in media query */
+}
+
+@media (min-width: 768px) {
+    .center-flex {
+        flex-direction: row;
+    }
 }

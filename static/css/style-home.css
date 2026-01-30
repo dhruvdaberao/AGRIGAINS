@@ -130,26 +130,24 @@
     align-items: center;
     margin: 20px;
 }
-/* 
-.card {
-    display: flex;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 80%;   
-    max-width: 1200px; 
-} */
-
-
 .card {
     display: flex;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    width: 80%; /* Adjust the width as needed */
-    max-width: 1200px; /* Optional, to limit the maximum width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    transition: box-shadow 0.3s ease; /* Optional, for a smooth shadow transition on hover */
+    width: 90%; /* Changed from 80% to 90% for better mobile usage */
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    margin: 20px auto;
+    flex-direction: column; /* Default to column for mobile */
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row; /* Row for tablets and up */
+        width: 80%;
+    }
 }
 
 .card:hover {
@@ -371,17 +369,19 @@
 .card-content {
     padding: 20px;
 }
-.card1-img img{
-   height: 300px;
-   margin-left: 130px ;
-
+.card1-img img, .card2-img img {
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
-.card2-img img{
-    height: 280px;
-    margin-left: 130px ;
- 
- }
+@media (min-width: 768px) {
+    .card1-img img, .card2-img img {
+        height: 300px;
+        /* margin-left: 130px; Removed hardcoded margin */
+    }
+}
 
 
 /* Reverse card layout
